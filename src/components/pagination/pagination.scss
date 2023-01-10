@@ -1,0 +1,23 @@
+@import "../../styles/variables";
+
+.pagination-container {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  ul {
+    display: flex;
+    gap: 10px;
+    li {
+      transition: all 0.3s;
+      cursor: pointer;
+      &:hover {
+        color: lighten($secondary-bg, 30%);
+      }
+    }
+    .page-active {
+      pointer-events: none;
+      border-bottom: 2px solid $main-color;
+    }
+  }
+}
